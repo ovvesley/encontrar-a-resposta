@@ -18,21 +18,21 @@ function getCookiesFromResponse($http_response_header)
 
 function getTokenInitialPage($page)
 {
-    $token_id = 'token';
-    $token_element = $page->getElementById($token_id);
-    $token_value = $token_element->getAttribute('value');
-    return $token_value;
+    $tokenId = 'token';
+    $tokenElement = $page->getElementById($tokenId);
+    $tokenValue = $tokenElement->getAttribute('value');
+    return $tokenValue;
 }
 
 function replacementToken($token)
 {
-    $new_token_value = null;
+    $newTokenValue = null;
     $replacement = json_decode('{"0":"9","1":"8","2":"7","3":"6","4":"5","5":"4","6":"3","7":"2","8":"1","9":"0","a":"z","b":"y","c":"x","d":"w","e":"v","f":"u","g":"t","h":"s","i":"r","j":"q","k":"p","l":"o","m":"n","n":"m","o":"l","p":"k","q":"j","r":"i","s":"h","t":"g","u":"f","v":"e","w":"d","x":"c","y":"b","z":"a"}', true);
 
     for ($i = 0; $i < strlen($token); $i++) {
-        $new_token_value .= $replacement[$token[$i]];
+        $newTokenValue .= $replacement[$token[$i]];
     }
-    return $new_token_value;
+    return $newTokenValue;
 }
 
 function handleDataToRequest($data)
