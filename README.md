@@ -10,6 +10,13 @@ git clone https://github.com/ovvesley/encontrar-a-resposta.git
 ```
 
 ---
+**Navegue até a pasta do repositório**
+
+```
+cd encontrar-a-resposta
+```
+
+---
 
 **Tenha o docker instalado e execute o seguinte comando**
 
@@ -30,6 +37,13 @@ docker run -it --rm --name encontrar-a-resposta -v "$PWD":/usr/src/myapp -w /usr
 git clone https://github.com/ovvesley/encontrar-a-resposta.git
 ```
 
+---
+
+**Navegue até a pasta do repositório**
+
+```
+cd encontrar-a-resposta
+```
 ---
 
 **Tenha o docker instalado e execute o seguinte comando**
