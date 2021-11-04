@@ -1,7 +1,15 @@
 # 🕵️‍♂️🤖 Encontrar a resposta 
 
 
+**Requisitos:**
+
+
+- **php 7.4**
+
+---
+
 ## 🐧 Como instalar no Linux
+
 
 **Clone o repositório com o GIT**
 
